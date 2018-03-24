@@ -1,0 +1,36 @@
+#!/bin/sh
+
+. $XDG_RUNTIME_DIR/xcolors
+
+cat <<CONF
+set completion-bg "${xres_background}"
+set completion-fg "${xres_foreground}"
+set completion-group-bg "${xres_background}"
+set completion-group-fg "${xres_color6}"
+set completion-highlight-bg "${xres_foreground}"
+set completion-highlight-fg "${xres_background}"
+set default-bg "${xres_background}"
+set default-fg "${xres_foreground}"
+set inputbar-bg "${xres_background}"
+set inputbar-fg "${xres_foreground}"
+set notification-bg "${xres_background}"
+set notification-fg "${xres_foreground}"
+set notification-error-bg "${xres_color1}"
+set notification-error-fg "${xres_foreground}"
+set notification-warning-bg "${xres_color1}"
+set notification-warning-fg "${xres_foreground}"
+set statusbar-bg "${xres_background}"
+set statusbar-fg "${xres_foreground}"
+set index-bg "${xres_background}"
+set index-fg "${xres_foreground}"
+set index-active-bg "${xres_foreground}"
+set index-active-fg "${xres_background}"
+set render-loading-bg "${xres_background}"
+set render-loading-fg "${xres_foreground}"
+
+set smooth-scroll true
+set window-title-home-tilde true
+set window-title-page true
+set statusbar-basename true
+set selection-clipboard clipboard
+CONF

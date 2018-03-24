@@ -1,0 +1,24 @@
+! Xresources
+
+#define xres_foreground #ffffff
+#define xres_background #161616
+#define xres_color0     #222222
+#define xres_color8     #666666
+#define xres_color1     #e84f4f
+#define xres_color9     #d23d3d
+#define xres_color2     #b7ce42
+#define xres_color10    #bde077
+#define xres_color3     #fea63c
+#define xres_color11    #ffe863
+#define xres_color4     #66aabb
+#define xres_color12    #aaccbb
+#define xres_color5     #b7416e
+#define xres_color13    #e16a98
+#define xres_color6     #6d878d
+#define xres_color14    #42717b
+#define xres_color7     #dddddd
+#define xres_color15    #cccccc
+
+#include ".xres/xft"
+#include ".xres/urxvt"
+#include ".xres/colors"

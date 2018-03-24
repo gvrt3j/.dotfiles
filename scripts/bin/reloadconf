@@ -1,0 +1,13 @@
+#!/bin/sh -x
+
+if [ -f $HOME/.Xresources ]; then
+	xrdb $HOME/.Xresources
+	printxcolors > $XDG_RUNTIME_DIR/xcolors
+	printxenv > $XDG_RUNTIME_DIR/xenv
+else
+	echo "Cannot load X resources." && exit 1
+fi
+
+$HOME/.config/windowchef/windowchefrc
+mkdir -pv $HOME/.config/dunst && gendunstrc > $HOME/.config/dunst/dunstrc
+mkdir -pv $HOME/.config/zathura && genzathurarc > $HOME/.config/zathura/zathurarc

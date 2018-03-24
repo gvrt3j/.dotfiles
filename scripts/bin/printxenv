@@ -1,0 +1,26 @@
+#!/bin/sh
+
+scr_x="$(xwininfo -root | grep Width | awk '{print $2}')"
+scr_y="$(xwininfo -root | grep Height | awk '{print $2}')"
+gap="4"
+border="8"
+padding="$(xrdb -query | grep internalBorder | awk '{print $2}')"
+bar_width="$((${scr_x} / 5))"
+bar_height="64"
+# center
+#bar_x="$(((${scr_x} / 2) - (${bar_width} / 2)))"
+# left
+bar_x="${padding}"
+bar_y="${padding}"
+
+cat <<ENV
+SCREEN_X="${scr_x}"
+SCREEN_Y="${scr_y}"
+GENERAL_GAP="${gap}"
+BORDER_WIDTH="${border}"
+GENERAL_PADDING="${padding}"
+BAR_WIDTH="${bar_width}"
+BAR_HEIGHT="${bar_height}"
+BAR_X="${bar_x}"
+BAR_Y="${bar_y}"
+ENV

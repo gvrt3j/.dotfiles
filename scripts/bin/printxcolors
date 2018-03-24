@@ -1,0 +1,26 @@
+#!/bin/sh
+
+get_xres() {
+	xrdb -query | grep $1 | awk '{print $2}'
+}
+
+cat <<COLORS
+xres_foreground="$(get_xres foreground:)"
+xres_background="$(get_xres background:)"
+xres_color0="$(get_xres color0:)"
+xres_color8="$(get_xres color8:)"
+xres_color1="$(get_xres color1:)"
+xres_color9="$(get_xres color9:)"
+xres_color2="$(get_xres color2:)"
+xres_color10="$(get_xres color10:)"
+xres_color3="$(get_xres color3:)"
+xres_color11="$(get_xres color11:)"
+xres_color4="$(get_xres color4:)"
+xres_color12="$(get_xres color12:)"
+xres_color5="$(get_xres color5:)"
+xres_color13="$(get_xres color13:)"
+xres_color6="$(get_xres color6:)"
+xres_color14="$(get_xres color14:)"
+xres_color7="$(get_xres color7:)"
+xres_color15="$(get_xres color15:)"
+COLORS
