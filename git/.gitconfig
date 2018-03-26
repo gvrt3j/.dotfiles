@@ -1,0 +1,8 @@
+# ~/.gitconfig
+
+[user]
+	email = gvrt3j@gmail.com
+	name = Gurtej Singh
+	signingkey = 961993F62D391607C4DE854AADEC93DF5F49C683
+[commit]
+	gpgsign = true

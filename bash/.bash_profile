@@ -3,7 +3,7 @@
 # Include ~/.bashrc if it exists.
 [[ -f ~/.bashrc ]] && source ~/.bashrc
 
-# Environment variables.
+# Script for login shells.
 [[ -f ~/.profile ]] && source ~/.profile
 
 # Autostart X at login.

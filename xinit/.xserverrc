@@ -1,7 +1,3 @@
 #!/bin/sh
 
-# 1. -nolisten tcp: Disable any TCP/IP based access to X server.
-# 2. vt$XDG_VTNR: Start X on same virtual terminal where login occured.
-# 3. -keeptty: Redirect output of X session to keep vt clean.
-
 exec /usr/bin/X -nolisten tcp vt$XDG_VTNR -keeptty "$@"

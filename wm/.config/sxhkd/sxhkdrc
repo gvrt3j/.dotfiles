@@ -72,10 +72,10 @@ super + ctrl + m
 	urxvt -e neomutt
 
 super + ctrl + p
-	passmenu
+	dmenu_wrapper passmenu
 
 super + @space
-	dmenu_wrapper run
+	dmenu_wrapper dmenu_run
 
 # Audio control
 XF86AudioRaiseVolume

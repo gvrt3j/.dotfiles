@@ -10,11 +10,10 @@
 (prefer-coding-system 'utf-8)
 
 ;; Don't clutter the project dir with backups or lockfiles.
-(defconst gurtej/backup-dir "~/.emacs.d/backups")
 (setq backup-directory-alist
-      `((".*" . ,gurtej/backup-dir)))
+      `(("." . ,(concat user-emacs-directory "backups"))))
 (setq auto-save-file-name-transforms
-      `((".*" ,gurtej/backup-dir t)))
+      `((".*" ,(concat user-emacs-directory "backups") t)))
 (setq create-lockfiles nil)
 
 ;; Save undo history.
@@ -56,15 +55,3 @@
 (add-hook 'c-mode-common-hook
           (lambda ()
             (c-set-offset 'inextern-lang 0)))
-
-;; Turn switch-to-buffer into ibuffer
-(global-set-key (kbd "C-x b") 'ibuffer)
-(setq ibuffer-expert t)
-
-;; Turn list-buffers into ido-switch-buffer
-(global-set-key (kbd "C-x C-b") 'ido-switch-buffer)
-
-;; ido-mode
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)

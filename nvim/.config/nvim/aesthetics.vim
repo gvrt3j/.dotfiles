@@ -1,15 +1,15 @@
-colorscheme noctu
-filetype indent plugin on
-syntax enable
+" Colorscheme
+set background=dark
+try
+    colorscheme noctu
+catch
+endtry
+
+" Line numbers
 set number
 
 " Highlight cursor
 set cursorline
-set cursorcolumn
-
-" Make it natural
-set splitright
-set splitbelow
 
 " No line wrapping
 set nowrap

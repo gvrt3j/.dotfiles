@@ -1,6 +1,6 @@
-#!/bin/zsh
+# ~/.zshrc
 
-# Environment variables.
+# Script for login shells
 [[ -f ~/.zprofile ]] && source ~/.zprofile
 
 # Load configuration files.

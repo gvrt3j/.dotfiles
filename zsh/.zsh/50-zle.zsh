@@ -1,4 +1,3 @@
-# Editing
 bindkey -e
 
 bindkey "^p" history-beginning-search-backward

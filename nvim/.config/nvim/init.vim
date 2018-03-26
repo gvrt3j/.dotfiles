@@ -1,7 +1,6 @@
 let configs = [
 			\  "behavior",
 			\  "plugins",
-			\  "plugin-settings",
 			\  "aesthetics",
 			\]
 for file in configs

@@ -1,15 +1,16 @@
-" Skip intro.
-set shortmess+=I
+" Syntax
+filetype indent plugin on
+syntax enable
 
-" Tab settings.
-set tabstop=4
-set noexpandtab
-set softtabstop=-1
-set shiftwidth=4
+" Indentation
 set smartindent
 set autoindent
+set noexpandtab
+set tabstop=4
+set softtabstop=-1
+set shiftwidth=4
 "
-" Saner backspace behavior.
+" Familiar backspace behaviour.
 set backspace=indent,eol,start
 
 " Respect case in searches only if search query contains upper-case chars.
@@ -25,10 +26,14 @@ set inccommand=split
 " Hide buffer, don't kill.
 set hidden
 
+" Make it natural
+set splitright
+set splitbelow
+
 " Clipboard integration.
 set clipboard+=unnamedplus
 
-" Set backup/undo dirs.
+" Set backup/undo/swap dirs.
 set backupdir=~/.local/share/nvim/tmp/backups/
 set undodir=~/.local/share/nvim/tmp/undo/
 
@@ -53,3 +58,7 @@ set wildignorecase
 
 " Search for files recursively 
 set path+=**
+
+" Performance
+set ttyfast
+set lazyredraw

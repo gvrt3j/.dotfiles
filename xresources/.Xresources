@@ -1,4 +1,4 @@
-! Xresources
+! ~/.Xresources
 
 #define xres_foreground #ffffff
 #define xres_background #161616

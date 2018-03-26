@@ -2,12 +2,11 @@
 
 . $XDG_RUNTIME_DIR/xcolors
 
-command="dmenu"
-
-[ "$1" = "run" ] && command="dmenu_run"
-
-"${command}"\
-	-nb "${xres_background}"\
-	-nf "${xres_foreground}"\
-	-sb "${xres_foreground}"\
-	-sf "${xres_background}"
+while [ $# -gt 0 ]; do
+	"${1}"\
+		-nb "${xres_background}"\
+		-nf "${xres_foreground}"\
+		-sb "${xres_foreground}"\
+		-sf "${xres_background}"
+	shift
+done

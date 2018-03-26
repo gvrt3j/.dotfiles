@@ -61,7 +61,7 @@ get_network() {
 }
 
 get_brightness() {
-	echo -e "$(format_accent '\ue26e') $(printf "%.0f%%%%" "$(light)")"
+	echo -e "$(format_accent '\ue26e') $(printf '%.0f%%%%' $(light))"
 }
 
 get_date() {

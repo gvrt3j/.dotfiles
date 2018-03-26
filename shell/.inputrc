@@ -1,3 +1,5 @@
+# readline
+
 $include /etc/inputrc
 
 $if Bash

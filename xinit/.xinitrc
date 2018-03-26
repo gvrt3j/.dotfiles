@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# Defaults
 if [ -f "$HOME/.Xresources" ]; then
 	xrdb "$HOME/.Xresources"
 fi

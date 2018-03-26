@@ -1,6 +1,8 @@
-# Completion
 autoload -Uz compinit
 compinit
+autoload -Uz bashcompinit
+bashcompinit
+
 zstyle ':completion:*' menu select
 zstyle ':completion:*' rehash true
 zstyle ':completion:*' completer _expand _complete _correct _approximate
@@ -11,6 +13,3 @@ zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
 zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
-
-autoload -Uz bashcompinit
-bashcompinit
