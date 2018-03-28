@@ -65,12 +65,6 @@ super + Return
 super + ctrl + Return
 	st -e sh -c '[ -z "$TMUX" ] && (tmux attach || tmux new-session)'
 
-super + ctrl + f
-	urxvt -e ranger
-
-super + ctrl + m
-	urxvt -e neomutt
-
 super + ctrl + p
 	dmenu_wrapper passmenu
 

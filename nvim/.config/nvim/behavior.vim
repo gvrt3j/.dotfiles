@@ -58,7 +58,3 @@ set wildignorecase
 
 " Search for files recursively 
 set path+=**
-
-" Performance
-set ttyfast
-set lazyredraw

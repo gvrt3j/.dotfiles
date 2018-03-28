@@ -1,4 +1,4 @@
-HISTSIZE=200000
+HISTSIZE=9001
 SAVEHIST=$HISTSIZE
 HISTFILE=~/.zsh_history
 setopt inc_append_history

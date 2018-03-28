@@ -30,7 +30,7 @@ set imap_keepalive = 300
 set move = no
 
 
-set sidebar_visible = yes
-
-
 set history_remove_dups = yes
+
+
+auto_view text/html

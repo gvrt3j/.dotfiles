@@ -9,11 +9,7 @@ endif
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-" colors
 Plug 'xero/vim-noctu'
-
-" features
-Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'lilydjwg/colorizer'
 

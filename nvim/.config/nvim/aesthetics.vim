@@ -1,8 +1,8 @@
 " Colorscheme
-set background=dark
 try
-    colorscheme noctu
+	colorscheme noctu
 catch
+	colorscheme ron
 endtry
 
 " Line numbers
