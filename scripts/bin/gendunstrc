@@ -18,6 +18,7 @@ format = "<b>%s</b> %p\n%b"
 show_age_threshold = 60
 dmenu = "$(which dmenu_wrapper)"
 browser = "$(which ${BROWSER})"
+icon_position = left
 
 [shortcuts]
 close = ctrl+space

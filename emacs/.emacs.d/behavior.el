@@ -9,20 +9,6 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; Don't clutter the project dir with backups or lockfiles.
-(setq backup-directory-alist
-      `(("." . ,(concat user-emacs-directory "backups"))))
-(setq auto-save-file-name-transforms
-      `((".*" ,(concat user-emacs-directory "backups") t)))
-(setq create-lockfiles nil)
-
-;; Save undo history.
-(eval-when-compile
-  (defvar undo-tree-auto-save-history)
-  (defvar undo-tree-history-directory-alist))
-(setq undo-tree-auto-save-history t)
-(setq undo-tree-history-directory-alist '(("." . "~/.emacs.d/undo")))
-
 ;; Shut up.
 (setq large-file-warning-threshold nil)
 
