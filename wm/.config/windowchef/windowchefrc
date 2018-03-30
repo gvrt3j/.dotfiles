@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# windowchef (best wm) configuration
+# windowchef configuration
 
 . $XDG_RUNTIME_DIR/xcolors
 . $XDG_RUNTIME_DIR/xenv

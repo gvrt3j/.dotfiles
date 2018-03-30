@@ -3,7 +3,7 @@
 . $XDG_RUNTIME_DIR/xcolors
 
 while [ $# -gt 0 ]; do
-	"${1}"\
+	"${1}" -i\
 		-nb "${xres_background}"\
 		-nf "${xres_foreground}"\
 		-sb "${xres_foreground}"\

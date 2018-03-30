@@ -9,9 +9,6 @@
 (set-selection-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-;; Shut up.
-(setq large-file-warning-threshold nil)
-
 ;; Tab settings.
 (setq standard-indent 4)
 (setq-default tab-width 4)
@@ -22,8 +19,6 @@
 
 ;; Follow symlinks when using version control.
 (setq vc-follow-symlinks t)
-
-(setq sentence-end-double-space nil)
 
 (eval-when-compile
   (defvar c-default-style))

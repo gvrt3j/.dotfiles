@@ -29,8 +29,6 @@ set imap_keepalive = 300
 
 set move = no
 
-
 set history_remove_dups = yes
-
 
 auto_view text/html
