@@ -19,25 +19,6 @@
 #define xres_color7     #dddddd
 #define xres_color15    #cccccc
 
-! #define xres_foreground #c5c8c6
-! #define xres_background #1d1f21
-! #define xres_color0     #282a2e
-! #define xres_color8     #373b41
-! #define xres_color1     #a54242
-! #define xres_color9     #cc6666
-! #define xres_color2     #8c9440
-! #define xres_color10    #b5bd68
-! #define xres_color3     #de935f
-! #define xres_color11    #f0c674
-! #define xres_color4     #5f819d
-! #define xres_color12    #81a2be
-! #define xres_color5     #85678f
-! #define xres_color13    #b294bb
-! #define xres_color6     #5e8d87
-! #define xres_color14    #8abeb7
-! #define xres_color7     #707880
-! #define xres_color15    #c5c8c6
-
 *.foreground: xres_foreground
 *.background: xres_background
 *.color0:     xres_color0

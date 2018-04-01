@@ -1,7 +1,7 @@
 # ~/.profile
 
 # Environment variables
-EDITOR=nvim
+EDITOR=vim
 VISUAL=$EDITOR
 PAGER=less
 BROWSER=chromium

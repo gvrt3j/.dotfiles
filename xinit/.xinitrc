@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# merge defaults
 if [ -f "$HOME/.Xresources" ]; then
 	xrdb "$HOME/.Xresources"
 fi
@@ -14,6 +15,7 @@ fi
 xset fp rehash
 reloadconf
 
+# autostart
 xsetroot -cursor_name left_ptr
 compton &
 setroot --restore
