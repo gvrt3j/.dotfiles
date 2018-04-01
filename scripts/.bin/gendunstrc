@@ -5,12 +5,12 @@
 
 cat <<CONF
 [global]
-geometry = "0x5-${GENERAL_GAP}+${GENERAL_GAP}"
-separator_height = "$((${BORDER_WIDTH} / 4))"
-padding = "${GENERAL_PADDING}"
-horizontal_padding = "${GENERAL_PADDING}"
-frame_width = "$((${BORDER_WIDTH} / 4))"
-frame_color = "${xres_foreground}"
+geometry = "0x5-4+4"
+separator_height = "2"
+padding = "4"
+horizontal_padding = "4"
+frame_width = "2"
+frame_color = "$xres_foreground"
 separator_color = frame
 font = UW Ttyp0 7
 markup = full
@@ -27,17 +27,17 @@ history = ctrl+grave
 context = ctrl+shift+period
 
 [urgency_low]
-background = "${xres_background}"
-foreground = "${xres_foreground}"
+background = "$xres_background"
+foreground = "$xres_foreground"
 timeout = 10
 
 [urgency_normal]
-background = "${xres_background}"
-foreground = "${xres_foreground}"
+background = "$xres_background"
+foreground = "$xres_foreground"
 timeout = 10
 
 [urgency_critical]
-background = "${xres_foreground}"
-foreground = "${xres_background}"
+background = "$xres_foreground"
+foreground = "$xres_background"
 timeout = 0
 CONF

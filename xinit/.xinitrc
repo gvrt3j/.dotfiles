@@ -14,11 +14,9 @@ fi
 xset fp rehash
 reloadconf
 
-# Autostart
 xsetroot -cursor_name left_ptr
 compton &
 setroot --restore
-sxhkd &
-sxbar &
+dropbox &
 
-exec windowchef
+exec i3

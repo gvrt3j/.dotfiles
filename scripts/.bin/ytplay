@@ -1,6 +1,0 @@
-#!/bin/sh
-
-while [ $# -gt 0 ]; do
-	mpv ytdl://ytsearch:"${1}"
-	shift
-done

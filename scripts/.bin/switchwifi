@@ -1,0 +1,6 @@
+#!/bin/sh
+
+choice=$(netctl-auto list | cut -b 3- | dmenu -p "WiFi" "$@")
+if [ -n "$choice" ]; then
+	netctl-auto switch-to "$choice"
+fi

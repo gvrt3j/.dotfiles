@@ -10,7 +10,7 @@ set tabstop=4
 set softtabstop=-1
 set shiftwidth=4
 "
-" Familiar backspace behaviour.
+" Familiar backspace behaviour
 set backspace=indent,eol,start
 
 " Respect case in searches only if search query contains upper-case chars.
@@ -18,7 +18,7 @@ set ignorecase
 set smartcase
 set infercase
 
-" Other search tricks.
+" Other search tricks
 set hlsearch
 set incsearch
 set inccommand=split
@@ -30,7 +30,7 @@ set hidden
 set splitright
 set splitbelow
 
-" Clipboard integration.
+" Clipboard integration
 set clipboard+=unnamedplus
 
 " Set backup/undo/swap dirs.

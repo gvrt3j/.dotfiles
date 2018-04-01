@@ -1,8 +1,8 @@
-alias diff='diff --color=auto'
-alias grep='grep --color=auto'
 alias ls='ls -hF --color=auto'
 alias ll='ls -l'
 alias la='ls -la'
+alias grep='grep --color=auto'
+alias diff='diff --color=auto'
 alias cower='cower --color=auto'
 alias ytdl='youtube-dl -o "%(title)s.%(ext)s" -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]"'
 
