@@ -1,19 +1,10 @@
-# i3
+# i3 config file (v4)
 
 font pango:UW Ttyp0 7
 
 # terminal
 bindsym Mod4+Return exec st -e zsh
 bindsym Mod4+Shift+Return exec urxvt -e zsh
-
-# volume
-bindsym XF86AudioRaiseVolume exec ponymix --output increase 2 -N && ponymix --output unmute
-bindsym XF86AudioLowerVolume exec ponymix --output decrease 2 -N && ponymix --output unmute
-bindsym XF86AudioMute exec ponymix --output toggle -N
-
-# brightness
-bindsym XF86MonBrightnessUp exec light -A 2
-bindsym XF86MonBrightnessDown exec light -U 2
 
 # kill focused window
 bindsym Mod4+Shift+q kill
@@ -47,6 +38,8 @@ bindsym Mod4+s layout stacking
 bindsym Mod4+w layout tabbed
 bindsym Mod4+e layout toggle split
 
+floating_modifier Mod4
+
 # toggle tiling / floating
 bindsym Mod4+Shift+space floating toggle
 
@@ -55,9 +48,6 @@ bindsym Mod4+space focus mode_toggle
 
 # focus the parent container
 bindsym Mod4+a focus parent
-
-# focus the child container
-#bindsym Mod4+d focus child
 
 # workspaces
 set $ws1 "1"
@@ -95,7 +85,7 @@ bindsym Mod4+Shift+8 move container to workspace $ws8
 bindsym Mod4+Shift+9 move container to workspace $ws9
 bindsym Mod4+Shift+0 move container to workspace $ws10
 
-# reload the configuration file
+# reload configuration file
 bindsym Mod4+Shift+r reload
 
 # exit i3
@@ -109,13 +99,35 @@ mode "resize" {
         bindsym l resize grow width 10 px or 10 ppt
 
         bindsym Mod4+r mode "default"
+        bindsym Escape mode "default"
+        bindsym Return mode "default"
 }
 
 bindsym Mod4+r mode "resize"
 
-floating_modifier Mod4
+# scratchpad
+bindsym Mod4+Shift+minus move scratchpad
+bindsym Mod4+minus scratchpad show
 
 # statusbar
+set_from_resource $foreground foreground
+set_from_resource $background background
+
 bar {
-        status_command i3status
+	status_command    i3status
+	separator_symbol "|"
+	
+	colors {
+		background $background
+		statusline $foreground
+	}
 }
+
+# volume
+bindsym XF86AudioRaiseVolume exec ponymix --output increase 2 -N && ponymix --output unmute
+bindsym XF86AudioLowerVolume exec ponymix --output decrease 2 -N && ponymix --output unmute
+bindsym XF86AudioMute exec ponymix --output toggle -N
+
+# brightness
+bindsym XF86MonBrightnessUp exec light -A 2
+bindsym XF86MonBrightnessDown exec light -U 2

@@ -1,42 +1,23 @@
 ! ~/.Xresources
 
-#define xres_foreground #ffffff
-#define xres_background #161616
-#define xres_color0     #222222
-#define xres_color8     #666666
-#define xres_color1     #e84f4f
-#define xres_color9     #d23d3d
-#define xres_color2     #b7ce42
-#define xres_color10    #bde077
-#define xres_color3     #fea63c
-#define xres_color11    #ffe863
-#define xres_color4     #66aabb
-#define xres_color12    #aaccbb
-#define xres_color5     #b7416e
-#define xres_color13    #e16a98
-#define xres_color6     #6d878d
-#define xres_color14    #42717b
-#define xres_color7     #dddddd
-#define xres_color15    #cccccc
-
-*.foreground: xres_foreground
-*.background: xres_background
-*.color0:     xres_color0
-*.color8:     xres_color8
-*.color1:     xres_color1
-*.color9:     xres_color9
-*.color2:     xres_color2
-*.color10:    xres_color10
-*.color3:     xres_color3
-*.color11:    xres_color11
-*.color4:     xres_color4
-*.color12:    xres_color12
-*.color5:     xres_color5
-*.color13:    xres_color13
-*.color6:     xres_color6
-*.color14:    xres_color4
-*.color7:     xres_color7
-*.color15:    xres_color15
+*.foreground:   #ffffff
+*.background:   #161616
+*.color0:       #222222
+*.color8:       #666666
+*.color1:       #e84f4f
+*.color9:       #d23d3d
+*.color2:       #b7ce42
+*.color10:      #bde077
+*.color3:       #fea63c
+*.color11:      #ffe863
+*.color4:       #66aabb
+*.color12:      #aaccbb
+*.color5:       #b7416e
+*.color13:      #e16a98
+*.color6:       #6d878d
+*.color14:      #42717b
+*.color7:       #dddddd
+*.color15:      #cccccc
 
 Xft.dpi: 120
 Xft.autohint: false
@@ -46,13 +27,13 @@ Xft.hinting: true
 Xft.antialias: true
 Xft.rgba: rgb
 
-URxvt.font: xft:UW Ttyp0:pixelsize=14
+URxvt.font: xft:UW Ttyp0:pixelsize=16
 URxvt.loginShell: true
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true
 URxvt.scrollTtyKeypress: true
 URxvt.scrollBar: false
-URxvt.internalBorder: 12
+URxvt.internalBorder: 2
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 URxvt.saveLines: 65536

@@ -1,0 +1,48 @@
+#!/bin/sh
+
+. $XDG_RUNTIME_DIR/xcolors
+
+cat <<CONF
+# i3status configuration file.
+
+general {
+	interval = 30
+	colors = true
+	color_good = "$xres_color2"
+	color_bad = "$xres_color1"
+	color_degraded ="$xres_color3"
+}
+
+order += "load"
+order += "disk /"
+order += "volume master"
+order += "wireless wlp1s0"
+order += "battery 0"
+order += "time"
+
+disk "/" {
+	format = "%avail / %total"
+}
+
+wireless wlp1s0 {
+	format_up = "W: %essid at%quality %ip"
+	format_down = "W: offline"
+}
+
+battery 0 {
+	format = "%status %percentage %remaining"
+}
+
+load {
+	format = "%1min"
+}
+
+time {
+	format = "%a %d %b %R"
+}
+
+volume master {
+	format = "♪: %volume"
+	format_muted = "♪: muted (%volume)"
+}
+CONF

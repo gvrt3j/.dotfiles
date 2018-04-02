@@ -6,7 +6,7 @@ cat <<CONF
 set completion-bg "$xres_background"
 set completion-fg "$xres_foreground"
 set completion-group-bg "$xres_background"
-set completion-group-fg "$xres_color6"
+set completion-group-fg "$xres_color2"
 set completion-highlight-bg "$xres_foreground"
 set completion-highlight-fg "$xres_background"
 set default-bg "$xres_background"
