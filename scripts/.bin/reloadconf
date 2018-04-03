@@ -9,4 +9,3 @@ fi
 
 mkdir -pv $HOME/.config/dunst && gendunstrc > $HOME/.config/dunst/dunstrc
 mkdir -pv $HOME/.config/zathura && genzathurarc > $HOME/.config/zathura/zathurarc
-mkdir -pv $HOME/.config/i3status && geni3statusconfig > $HOME/.config/i3status/config

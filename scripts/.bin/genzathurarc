@@ -28,7 +28,6 @@ set index-active-fg "$xres_background"
 set render-loading-bg "$xres_background"
 set render-loading-fg "$xres_foreground"
 
-set smooth-scroll true
 set window-title-home-tilde true
 set window-title-page true
 set statusbar-basename true

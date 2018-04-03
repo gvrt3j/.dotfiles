@@ -4,16 +4,17 @@
 
 cat <<CONF
 [global]
+follow = "mouse"
 geometry = "0x5-4+4"
-separator_height = "2"
-padding = "8"
-horizontal_padding = "8"
-frame_width = "2"
+separator_height = 2
+padding = 8
+horizontal_padding = 8
+frame_width = 2
 frame_color = "$xres_foreground"
 separator_color = frame
-font = UW Ttyp0 7
+font = Misc Fixed 8
 markup = full
-format = "<b>%s</b> %p\n%b"
+format = "<u>%s</u> %p\n%b"
 show_age_threshold = 60
 dmenu = "$(which dmenu)"
 browser = "$(which ${BROWSER})"

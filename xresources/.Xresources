@@ -1,23 +1,23 @@
 ! ~/.Xresources
 
-*.foreground:   #ffffff
-*.background:   #161616
-*.color0:       #222222
-*.color8:       #666666
-*.color1:       #e84f4f
-*.color9:       #d23d3d
-*.color2:       #b7ce42
-*.color10:      #bde077
-*.color3:       #fea63c
-*.color11:      #ffe863
-*.color4:       #66aabb
-*.color12:      #aaccbb
-*.color5:       #b7416e
-*.color13:      #e16a98
-*.color6:       #6d878d
-*.color14:      #42717b
-*.color7:       #dddddd
-*.color15:      #cccccc
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.color0:       #1d1f21
+*.color8:       #969896
+*.color1:       #cc6666
+*.color9:       #cc6666
+*.color2:       #b5bd68
+*.color10:      #b5bd68
+*.color3:       #f0c674
+*.color11:      #f0c674
+*.color4:       #81a2be
+*.color12:      #81a2be
+*.color5:       #b294bb
+*.color13:      #b294bb
+*.color6:       #8abeb7
+*.color14:      #8abeb7
+*.color7:       #c5c8c6
+*.color15:      #ffffff
 
 Xft.dpi: 120
 Xft.autohint: false
@@ -27,7 +27,7 @@ Xft.hinting: true
 Xft.antialias: true
 Xft.rgba: rgb
 
-URxvt.font: xft:UW Ttyp0:pixelsize=16
+URxvt.font: xft:Misc Fixed:pixelsize=16
 URxvt.loginShell: true
 URxvt.scrollTtyOutput: false
 URxvt.scrollWithBuffer: true

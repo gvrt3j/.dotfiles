@@ -1,16 +1,11 @@
-#!/bin/sh
-
-. $XDG_RUNTIME_DIR/xcolors
-
-cat <<CONF
 # i3status configuration file.
 
 general {
 	interval = 30
 	colors = true
-	color_good = "$xres_color2"
-	color_bad = "$xres_color1"
-	color_degraded ="$xres_color3"
+	color_good = "#daf7a6"
+	color_bad = "#ff5733"
+	color_degraded ="#ffc300"
 }
 
 order += "load"
@@ -20,8 +15,12 @@ order += "wireless wlp1s0"
 order += "battery 0"
 order += "time"
 
+load {
+	format = "%1min"
+}
+
 disk "/" {
-	format = "%avail / %total"
+	format = "%avail"
 }
 
 wireless wlp1s0 {
@@ -33,16 +32,11 @@ battery 0 {
 	format = "%status %percentage %remaining"
 }
 
-load {
-	format = "%1min"
+volume master {
+	format = "♪: %volume"
+	format_muted = "♪: muted (%volume)"
 }
 
 time {
 	format = "%a %d %b %R"
 }
-
-volume master {
-	format = "♪: %volume"
-	format_muted = "♪: muted (%volume)"
-}
-CONF

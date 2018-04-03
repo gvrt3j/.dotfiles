@@ -3,6 +3,7 @@
 . $XDG_RUNTIME_DIR/xcolors
 
 cat <<COLORS
+static const char *colorname[] = {
 	"$xres_color0",
 	"$xres_color1",
 	"$xres_color2",
@@ -22,4 +23,5 @@ cat <<COLORS
 	[255] = 0,
 	"$xres_foreground",
 	"$xres_background",
+};
 COLORS
