@@ -5,20 +5,21 @@
 cat <<CONF
 [global]
 follow = "mouse"
-geometry = "0x5-4+4"
+geometry = "0x10-8+8"
 separator_height = 2
 padding = 8
 horizontal_padding = 8
 frame_width = 2
 frame_color = "$xres_foreground"
 separator_color = frame
-font = Misc Fixed 8
+font = monospace 9
 markup = full
-format = "<u>%s</u> %p\n%b"
+format = "<b>%s</b> %p\n%b"
 show_age_threshold = 60
 dmenu = "$(which dmenu)"
 browser = "$(which ${BROWSER})"
 icon_position = left
+icon_path = "/usr/share/icons/Moka/16x16/status/:/usr/share/icons/Moka/16x16/devices:/usr/share/icons/Faba/48x48/notifications/"
 
 [shortcuts]
 close = ctrl+space

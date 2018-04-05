@@ -1,11 +1,11 @@
 # i3status configuration file.
 
 general {
-	interval = 30
+	interval = 5
 	colors = true
-	color_good = "#daf7a6"
-	color_bad = "#ff5733"
-	color_degraded ="#ffc300"
+	color_good = "#95ffaf"
+	color_bad = "#ff6464"
+	color_degraded ="#fffa64"
 }
 
 order += "load"

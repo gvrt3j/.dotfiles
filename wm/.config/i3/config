@@ -1,10 +1,19 @@
 # i3 config file (v4)
 
-font pango:Misc Fixed 7
+font pango:misc fixed 7
 
 # terminal
 bindsym Mod4+Return exec st -e zsh
 bindsym Mod4+Shift+Return exec urxvt -e zsh
+
+# volume
+bindsym XF86AudioRaiseVolume exec ponymix --output increase 2 -N && ponymix --output unmute
+bindsym XF86AudioLowerVolume exec ponymix --output decrease 2 -N && ponymix --output unmute
+bindsym XF86AudioMute exec ponymix --output toggle -N
+
+# brightness
+bindsym XF86MonBrightnessUp exec light -A 2
+bindsym XF86MonBrightnessDown exec light -U 2
 
 # kill focused window
 bindsym Mod4+Shift+q kill
@@ -112,18 +121,9 @@ bindsym Mod4+minus scratchpad show
 # statusbar
 bar {
 	status_command    i3status
-	
+
 	colors {
-		background "#1d1f21"
+		background "#222222"
 		statusline "#ffffff"
 	}
 }
-
-# volume
-bindsym XF86AudioRaiseVolume exec ponymix --output increase 2 && ponymix --output unmute
-bindsym XF86AudioLowerVolume exec ponymix --output decrease 2 && ponymix --output unmute
-bindsym XF86AudioMute exec ponymix --output toggle
-
-# brightness
-bindsym XF86MonBrightnessUp exec light -A 2
-bindsym XF86MonBrightnessDown exec light -U 2

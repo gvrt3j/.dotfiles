@@ -9,12 +9,12 @@ prompt walters
 # Editing
 bindkey -e
 
+autoload -Uz select-word-style && select-word-style bash
+
 bindkey "^p" history-beginning-search-backward
 bindkey "^n" history-beginning-search-forward
 
-setopt correct
-
-autoload -Uz select-word-style && select-word-style bash
+setopt extended_glob
 
 # History
 HISTSIZE=9001
@@ -33,7 +33,6 @@ alias la='ls -la'
 alias l1='ls -1'
 alias grep='grep --color=auto'
 alias less='less -R'
-alias diff='diff --color=auto -u'
 alias cower='cower --color=auto'
 alias ytdl='youtube-dl -o "%(title)s.%(ext)s" -f "bestvideo[height<=1080]+bestaudio/best[height<=1080]"'
 
@@ -51,8 +50,8 @@ man() {
 autoload -Uz compinit && compinit
 autoload -Uz bashcompinit && bashcompinit
 
-zstyle ':completion:*' menu select
-zstyle ':completion:*' rehash true
+zstyle ':completion:*' menu yes select
+zstyle ":completion:*:commands" rehash true
 zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
