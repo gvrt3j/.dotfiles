@@ -5,14 +5,16 @@
 cat <<CONF
 [global]
 follow = "mouse"
-geometry = "0x10-8+8"
+geometry = "512x5-8+8"
+shrink = true
+word_wrap = true
 separator_height = 2
 padding = 8
 horizontal_padding = 8
 frame_width = 2
 frame_color = "$xres_foreground"
 separator_color = frame
-font = monospace 9
+font = misc fixed 8
 markup = full
 format = "<b>%s</b> %p\n%b"
 show_age_threshold = 60
